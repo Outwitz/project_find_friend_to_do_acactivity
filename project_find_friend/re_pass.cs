@@ -92,8 +92,8 @@ namespace project_find_friend
             randomCode = (rand.Next(999999)).ToString();
             MailMessage message = new MailMessage();
             to = (email_re.Text).ToString();
-            from = "findfriendproject@gmail.com";
-            pass = "etojfegipcbnujnc";
+            from = "input your gmail";
+            pass = "input your app password";
             messageBody = "Your OTP code is " + randomCode;
             message.To.Add(to);
             message.From = new MailAddress(from);

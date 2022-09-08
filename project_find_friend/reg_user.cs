@@ -151,8 +151,8 @@ namespace project_find_friend
             //carete mailmsg func
             MailMessage message = new MailMessage();
             to = (email_box.Text).ToString();
-            from = "findfriendproject@gmail.com";
-            pass = "etojfegipcbnujnc";
+            from = "input your gmail";
+            pass = "input your app password";
             messageBody = "Your OTP code is " + randomCode;
             message.To.Add(to);
             message.From = new MailAddress(from);

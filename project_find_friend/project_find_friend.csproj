@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12DA736C-BAEF-47D8-BCBD-6EB5B9307302}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project_find_friend</RootNamespace>
+    <AssemblyName>project_find_friend</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>C:\Users\NITRO 5\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_form.Designer.cs">
+      <DependentUpon>admin_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_pic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_pic.Designer.cs">
+      <DependentUpon>add_pic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_pic_from.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_pic_from.Designer.cs">
+      <DependentUpon>Edit_pic_from.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_acc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_acc.Designer.cs">
+      <DependentUpon>edit_acc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="preview_pic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="preview_pic.Designer.cs">
+      <DependentUpon>preview_pic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rec_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rec_user.Designer.cs">
+      <DependentUpon>rec_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="his_reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="his_reg.Designer.cs">
+      <DependentUpon>his_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="re_pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="re_pass.Designer.cs">
+      <DependentUpon>re_pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rec_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rec_form.Designer.cs">
+      <DependentUpon>rec_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_form.Designer.cs">
+      <DependentUpon>report_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reg_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reg_user.Designer.cs">
+      <DependentUpon>reg_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_m.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_m.Designer.cs">
+      <DependentUpon>main_m.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reg_act.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reg_act.Designer.cs">
+      <DependentUpon>reg_act.cs</DependentUpon>
+    </Compile>
+    <Compile Include="his_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="his_add.Designer.cs">
+      <DependentUpon>his_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_act.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_act.Designer.cs">
+      <DependentUpon>edit_act.cs</DependentUpon>
+    </Compile>
+    <Compile Include="his_fav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="his_fav.Designer.cs">
+      <DependentUpon>his_fav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_form.Designer.cs">
+      <DependentUpon>login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin_form.resx">
+      <DependentUpon>admin_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_pic.resx">
+      <DependentUpon>add_pic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_pic_from.resx">
+      <DependentUpon>Edit_pic_from.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_acc.resx">
+      <DependentUpon>edit_acc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="preview_pic.resx">
+      <DependentUpon>preview_pic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rec_user.resx">
+      <DependentUpon>rec_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="his_reg.resx">
+      <DependentUpon>his_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="re_pass.resx">
+      <DependentUpon>re_pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rec_form.resx">
+      <DependentUpon>rec_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_form.resx">
+      <DependentUpon>report_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reg_user.resx">
+      <DependentUpon>reg_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_m.resx">
+      <DependentUpon>main_m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reg_act.resx">
+      <DependentUpon>reg_act.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="his_add.resx">
+      <DependentUpon>his_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_act.resx">
+      <DependentUpon>edit_act.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="his_fav.resx">
+      <DependentUpon>his_fav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_form.resx">
+      <DependentUpon>login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2f.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgff.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,2 +1,3 @@
-# project we are friend หาเพื่อนทำกิจกรรมต่างๆ
+# Project c#
+project we are friend หาเพื่อนทำกิจกรรมต่างๆ
 use for study only

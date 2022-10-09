@@ -6,7 +6,7 @@ use for study only
 
 1.สมัคร gmail 
 
-2.เปืดใช้งาน 2 step verification
+2.เปิดใช้งาน 2 step verification
 
 3.สร้าง app password
 

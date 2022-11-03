@@ -69,13 +69,17 @@ namespace project_find_friend
 
             String sql2 = "DELETE FROM lib2 WHERE name = '" + deleteby_name + "'";
             MySqlCommand cmd2 = new MySqlCommand(sql2, conn);
-
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            cmd2.ExecuteNonQuery();
-            conn.Close();
-            populateGrid();
-            MessageBox.Show("Delete successfully");
+            
+            DialogResult dialogResult = MessageBox.Show("are you sure to delete", "confirm", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery();
+                conn.Close();
+                populateGrid();
+                MessageBox.Show("Delete successfully");
+            }
         }
     }
 }
